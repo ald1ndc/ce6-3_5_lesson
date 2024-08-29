@@ -13,6 +13,11 @@ Also, please note to update for MacOS(arm64) Docker Settings under General to en
 # docker buildx build --platform=linux/amd64,linux/arm64 --tag aldin/simple1-node-app .
 # docker images
 # docker tag aldin/simple1-node-app:latest 255945442255.dkr.ecr.ap-southeast-1.amazonaws.com/aldin/simple1-node-app:latest
+```
+Create public repository in AWS and look for the PUSH Commands on the right side.
+
+```
+# aws ecr get-login-password --region ap-southeast-1 | docker login --username AWS --password-stdin 255945442255.dkr.ecr.ap-southeast-1.amazonaws.com
 # docker push 255945442255.dkr.ecr.ap-southeast-1.amazonaws.com/aldin/simple1-node-app:latest
 
 # docker tag 255945442255.dkr.ecr.ap-southeast-1.amazonaws.com/aldin/simple1-node-app:latest 255945442255.dkr.ecr.ap-southeast-1.amazonaws.com/aldin/simple1-node-app:1
