@@ -1,9 +1,13 @@
 # ce6-3_5_lesson
 AWS ECR 
 
-Please note For MacOS Docker Settings under General ensure that the following is checked
+Please note that we have utilize the following link while working on this activity:
 
-Use containerd for pulling and storing images
+git@github.com:chathra222/ecs-ci-cd.git
+
+Also, please note to update for MacOS(arm64) Docker Settings under General to ensure that the following is checked
+
+ **Use containerd for pulling and storing images**
 
 ```
 # docker buildx build --platform=linux/amd64,linux/arm64 --tag aldin/simple1-node-app .
