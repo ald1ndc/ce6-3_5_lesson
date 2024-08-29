@@ -3,7 +3,7 @@ AWS ECR
 
 Please note For MacOS Docker Settings under General ensure that the following is checked
 
-# Use containerd for pulling and storing images
+Use containerd for pulling and storing images
 
 ```
 # docker buildx build --platform=linux/amd64,linux/arm64 --tag aldin/simple1-node-app .
